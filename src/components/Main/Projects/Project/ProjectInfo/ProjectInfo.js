@@ -9,9 +9,6 @@ const InfoContainer = styled.article`
   display: flex;
   flex-flow: column;
   flex-basis: ${sizing.size13};
-  @media ${`(min-width: ${breakpoint.med})`} {
-    /* flex: 1 1 50%; */
-  }
 `;
 
 const Title = styled.h3`
@@ -40,12 +37,12 @@ const Tag = styled.p`
   @media ${`(min-width: ${breakpoint.med})`} {
     order: 1;
   }
-
 `;
 
 const ButtonsContainer = styled.div`
   margin-top: ${sizing.size5};
   display: flex;
+  
   a {
     flex: 1 1 50%;
   }
