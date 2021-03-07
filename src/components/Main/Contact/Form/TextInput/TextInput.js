@@ -1,15 +1,17 @@
 import React from 'react';
 import { Field, ErrorMessage } from "formik";
 import styled from 'styled-components';
+import sizing from '../../../../../styles/config/sizing';
 import color from '../../../../../styles/config/colors';
 
 const StyledInput = styled.input`
   width: 100%;
-  padding: 1.5em;
+  padding: ${sizing.size4};
+  margin-top: ${sizing.size1};
   border-radius: 10px;
   outline: none;
+  font-size: 1rem;
   font-family: inherit;
-  background: ${color.gray100};
   color: ${color.gray800};
   
   &:focus{
@@ -19,12 +21,11 @@ const StyledInput = styled.input`
 
 export const StyledError = styled.div`
   color: red;
-  font-size: .75rem;
-  margin-top: 0.25rem;
+  margin-top: ${sizing.size1};
 `;
 
 export const StyledLabel = styled.label`
-  margin-top: 1rem;
+  margin-top: ${sizing.size4};
   display: block;
   color: ${color.gray800};
 `;

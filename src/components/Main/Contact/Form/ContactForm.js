@@ -10,7 +10,6 @@ import TextArea from './TextArea/TextArea';
 import { init, send } from 'emailjs-com';
 init(process.env.REACT_APP_EMAIL_USER_ID);
 
-
 const ContactFormSchema = Yup.object().shape({
     name: Yup.string()
       .min(2, 'Too Short!')
@@ -38,9 +37,10 @@ const StyledHeader = styled.h3`
 `;
 
 const StyledDescription = styled.p`
+  margin-top: ${sizing.size4};
   font-weight: 200;  
   color: ${color.gray600};
-  margin-bottom: 2rem;
+  margin-bottom: ${sizing.size6};
 `;
 
 const StyledSubmitButton = styled(Button)`
@@ -62,11 +62,11 @@ const ContactForm = () => {
           message_html: message,
           reply_to: email
         })
-    .then(() => {
-        console.success('Success!');       
-    }, (error) => {
-        console.error(error);
-    });
+    // .then(() => {
+    //     console.success('Success!');       
+    // }, (error) => {
+    //     console.error(error);
+    // });
   }
   return (
     <StyledContainer>

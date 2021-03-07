@@ -6,10 +6,9 @@ import NavBrand from './NavBrand/NavBrand';
 import ContactButton from './ContactButton/ContactButton';
 
 const StyledHeader = styled.header`
-  /* grid-column: 1 / 3; */
   flex-basis: 100%;
   height: 6vh;
-  background: ${color.white};
+  background: ${color.black};
   
   display: grid;
   grid-template-columns: ${grid.gridTemplateColumnParent};
@@ -19,7 +18,6 @@ const StyledHeader = styled.header`
 
 const GridContainer = styled.div`
   grid-column: ${grid.gridColumnContainer};
-  /* border-bottom: 4px solid ${color.gray50}; */
   grid-row: 1 / 2;
   display: flex;
   flex-direction: row;

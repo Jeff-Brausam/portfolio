@@ -5,15 +5,15 @@ import grid from '../../../styles/config/grid';
 import Form from './Form/ContactForm';
 
 const StyledWrapper = styled.section`
-  background-color: ${ color.gray800 };
-  flex-basis: 75vh;
+  background-color: ${color.gray800};
+  flex-basis: 80vh;
   display: grid;
   place-items: center;
   grid-template-columns: ${grid.gridTemplateColumnParent};
-`
+`;
 
 const GridContainer = styled.div`
-  grid-column: ${grid.gridColumnContainer};
+  grid-column: 1 / 4;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -21,7 +21,6 @@ const GridContainer = styled.div`
 
 const StyledFormContainer = styled.div`
   flex-basis: 100%;
-  /* display: flex;  */
 `;
 
 const Contact = () => {

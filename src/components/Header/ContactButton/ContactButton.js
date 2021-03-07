@@ -5,9 +5,10 @@ import Button from '../../UI/Button/Button';
 
 const StyledContactButton = styled(Button)`
     position: fixed;
-    right: 10%;
+    right: 14%;
     top: ${sizing.size4};
     z-index: 200;
+    box-shadow: 1px 3px 5px rgba(0,0,0,.2); 
 `;
 
 const ContactButton = () => {

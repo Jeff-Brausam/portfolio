@@ -22,6 +22,8 @@ const StyledButton = styled(Button)`
   border-radius: 5%; 
 
   &:hover{
+    color: ${props => props.primary ? color.white : color.purple300};
+    background-color: ${props => props.primary ? color.purple300: color.gray50};
     cursor: pointer;
   }
 `;

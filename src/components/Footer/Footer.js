@@ -25,6 +25,7 @@ const links = [
 
 const Wrapper = styled.footer`
   flex-basis: 100%;
+  height: 20vh;
   background-color: ${color.black};
   display: grid;
   grid-template-columns: ${grid.gridTemplateColumnParent};
@@ -53,6 +54,7 @@ const StyledLink = styled.a`
   &:hover{
    cursor: pointer;
    opacity: 1.4;
+   color: ${color.purple100};
   }
 `;
 

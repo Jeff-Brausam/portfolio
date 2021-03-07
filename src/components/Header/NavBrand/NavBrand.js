@@ -1,13 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import color from '../../../styles/config/colors';
+import sizing from '../../../styles/config/sizing';
 
 const BrandLink = styled.a`
-  grid-row: 1 / 2;
-  align-self: center;
-  justify-content: center;
-  color: ${color.black};
-  font-size: 1.3em;
+  color: ${color.white};
+  margin-left: ${sizing.size5};
+  font-size: 1.3rem;
   text-decoration: none;
   &:hover {
     cursor: pointer;

@@ -2,17 +2,18 @@ import React from 'react';
 import { Field, ErrorMessage } from "formik";
 import styled from 'styled-components';
 import color from '../../../../../styles/config/colors';
+import sizing from '../../../../../styles/config/sizing';
 import { StyledLabel, StyledError } from '../TextInput/TextInput';
 
 const StyledTextarea = styled.textarea`
-  padding: .5em;
-  border: 1px solid #aaa;
+  padding: ${sizing.size3};
+  margin-top: ${sizing.size1};
   resize: none;
   width: 100%;
   font-family: inherit;
-  height: 15rem;
+  height: ${sizing.size12};
   border-radius: 10px;
-    outline: none;
+  outline: none;
 
   &:focus{
     border: 2px solid ${color.gray50};
