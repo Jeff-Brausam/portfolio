@@ -3,8 +3,8 @@
 # cache
 /.cache
 
-#configurations
-config
+# #configurations
+# config
 
 # dependencies
 /node_modules
