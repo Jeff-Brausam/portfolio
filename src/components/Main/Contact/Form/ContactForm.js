@@ -49,24 +49,16 @@ const StyledSubmitButton = styled(Button)`
     margin-top: 1rem;
 `;
 
-
-
-
 const ContactForm = () => {    
   function sendEmail({ name, message, email }) {
     send(
       process.env.REACT_APP_EMAIL_SERVICE,
       process.env.REACT_APP_EMAIL_TEMPLATE,
-        {
-          from_name: name,
-          message_html: message,
-          reply_to: email
-        })
-    // .then(() => {
-    //     console.success('Success!');       
-    // }, (error) => {
-    //     console.error(error);
-    // });
+      {
+        from_name: name,
+        message_html: message,
+        reply_to: email
+      });
   }
   return (
     <StyledContainer>
@@ -81,9 +73,7 @@ const ContactForm = () => {
           sendEmail(values);
           resetForm();
           setTimeout(() => {
-          alert(JSON.stringify(values));
             setSubmitting(false);
-            
          }, 400);
         }}
       >
