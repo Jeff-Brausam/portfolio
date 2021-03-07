@@ -81,7 +81,6 @@ const Container = styled.div`
 
 const Heading = styled.h3`
   color: ${color.gray500};
-  margin-left: ${sizing.size5};
 `;
 
 const Projects = () => {

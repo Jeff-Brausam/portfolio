@@ -6,7 +6,7 @@ import Form from './Form/ContactForm';
 
 const StyledWrapper = styled.section`
   background-color: ${color.gray800};
-  flex-basis: 80vh;
+  flex-basis: 90vh;
   display: grid;
   place-items: center;
   grid-template-columns: ${grid.gridTemplateColumnParent};

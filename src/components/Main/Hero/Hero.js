@@ -8,7 +8,7 @@ import HeroSVG from './HeroSVG';
 
 const Wrapper = styled.section`
   background-color: ${color.gray100};
-  flex-basis: 90vh;
+  height: 90vh;
   background-color: ${color.purple400};
   
   display: grid;

@@ -25,7 +25,7 @@ const links = [
 
 const Wrapper = styled.footer`
   flex-basis: 100%;
-  height: 20vh;
+  height: 25vh;
   background-color: ${color.black};
   display: grid;
   grid-template-columns: ${grid.gridTemplateColumnParent};

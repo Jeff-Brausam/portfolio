@@ -6,8 +6,8 @@ import NavBrand from './NavBrand/NavBrand';
 import ContactButton from './ContactButton/ContactButton';
 
 const StyledHeader = styled.header`
-  flex-basis: 100%;
   height: 6vh;
+  flex-basis: 100%;
   background: ${color.black};
   
   display: grid;

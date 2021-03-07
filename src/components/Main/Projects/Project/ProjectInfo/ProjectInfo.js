@@ -32,7 +32,7 @@ const TagsContainer = styled.div`
 
 const Tag = styled.p`
   margin-top: ${sizing.size2};
-  color: ${color.gray400};
+  color: ${color.gray600};
   font-weight: 200;
   text-align: left;
   flex: 1 1 50%;
