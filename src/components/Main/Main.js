@@ -8,8 +8,6 @@ import color from '../../styles/config/colors';
 const Wrapper = styled.main`
   flex-basis: 100vw;
   background-color: ${color.white};
-  display: flex;
-  flex-direction: column;
 `;
 
 const Main = () => {

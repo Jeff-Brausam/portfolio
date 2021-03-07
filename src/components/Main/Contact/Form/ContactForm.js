@@ -26,7 +26,7 @@ const ContactFormSchema = Yup.object().shape({
 const StyledContainer = styled.div`
   box-shadow: 2px 4px 10px rgba(0,0,0,.2);
   border-radius: 15px;
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 2rem;
   background-color: ${color.gray50};
 `;
