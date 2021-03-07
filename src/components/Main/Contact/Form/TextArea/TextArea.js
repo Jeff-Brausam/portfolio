@@ -14,6 +14,7 @@ const StyledTextarea = styled.textarea`
   height: ${sizing.size12};
   border-radius: 10px;
   outline: none;
+  font-size: 1rem;
 
   &:focus{
     border: 2px solid ${color.gray50};
