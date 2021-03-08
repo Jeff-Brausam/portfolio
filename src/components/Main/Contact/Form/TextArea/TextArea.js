@@ -15,9 +15,11 @@ const StyledTextarea = styled.textarea`
   border-radius: 10px;
   outline: none;
   font-size: 1rem;
+  background-color: ${color.gray200};
+  color: ${color.black};
 
   &:focus{
-    border: 2px solid ${color.gray50};
+  background-color: ${color.white};
   }
 `;
 

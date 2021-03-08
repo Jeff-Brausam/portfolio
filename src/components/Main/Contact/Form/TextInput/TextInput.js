@@ -12,10 +12,12 @@ const StyledInput = styled.input`
   outline: none;
   font-size: 1rem;
   font-family: inherit;
-  color: ${color.gray800};
+  color: ${color.black};
+  background-color: ${color.gray200};
   
   &:focus{
-    border: 2px solid ${color.gray50};
+  color: ${color.black};
+  background-color: ${color.white};
   }
 `;
 
