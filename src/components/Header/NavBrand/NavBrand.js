@@ -6,7 +6,6 @@ const BrandLink = styled.a`
   color: ${color.white};
   font-size: 1.3rem;
   text-decoration: none;
-  /* flex-basis: 10%; */
   &:hover {
     cursor: pointer;
     color: ${color.gray600};

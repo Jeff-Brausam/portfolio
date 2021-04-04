@@ -6,7 +6,7 @@ import NavBrand from './NavBrand/NavBrand';
 import ContactButton from './ContactButton/ContactButton';
 
 const StyledHeader = styled.header`
-  height: 8vh;
+  height: 5rem;
   background: ${color.black};
   
   display: grid;
