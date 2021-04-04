@@ -11,10 +11,9 @@ const StyledContactButton = styled(Button)`
     z-index: 200;
     box-shadow: 1px 3px 5px rgba(0,0,0,.2);
     
-  @media ${`(max-width: ${breakpoint.small})`} {
-    /* Top fix on mobile */
+  /* @media ${`(max-width: ${breakpoint.small})`} {
     top: ${sizing.size2}
-  }
+  } */
 `;
 
 const ContactButton = () => {
