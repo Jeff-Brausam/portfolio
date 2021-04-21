@@ -7,10 +7,8 @@ import breakpoint from '../../../styles/config/breakpoints';
 import HeroSVG from './HeroSVG';
 
 const Wrapper = styled.section`
-  background-color: ${color.gray100};
+  background-color: ${color.gray900};
   height: 90vh;
-  background-color: ${color.purple400};
-  
   display: grid;
   grid-template-columns: ${grid.gridTemplateColumnParent};
 `;

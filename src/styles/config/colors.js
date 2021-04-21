@@ -10,6 +10,7 @@ export default {
   gray700: "rgb(55,65,81)",
   gray800: "rgb(31,41,55)",
   gray900: "rgb(17,24,39)",
+  gray1000: "rgb(5,5,5)",
   black: "rgb(0,0,0)",
   purple50: "rgb(181,179,255)",
   purple100: "rgb(151,149,255)",

@@ -7,7 +7,7 @@ import ContactButton from './ContactButton/ContactButton';
 
 const StyledHeader = styled.header`
   height: 5rem;
-  background: ${color.black};
+  background: ${color.gray1000};
   display: grid;
   grid-template-columns: ${grid.gridTemplateColumnParent};
   box-shadow: 3px 2px 6px rgba(0,0,0,.15);
