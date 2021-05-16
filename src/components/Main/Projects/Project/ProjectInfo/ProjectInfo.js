@@ -18,11 +18,11 @@ const Title = styled.h3`
 const Description = styled.p`
   margin-top: ${sizing.size3};
   color: ${color.gray600};
-  font-weight: 300; 
+  font-weight: 300;
 `;
 
 const TagsContainer = styled.div`
-  margin-top: ${sizing.size5};  
+  margin-top: ${sizing.size5};
   display: flex;
   flex-wrap: wrap;
 `;
@@ -42,26 +42,27 @@ const Tag = styled.p`
 const ButtonsContainer = styled.div`
   margin-top: ${sizing.size5};
   display: flex;
-  
+
   a {
     flex: 1 1 50%;
   }
 `;
 
 const Link = styled.a`
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
 `;
 
 const ProjectInfo = ({title, description, tags, links}) => {
   return (
-      <InfoContainer>
+    <InfoContainer>
       <Title>{title}</Title>
       <Description>{description}</Description>
-      <TagsContainer> 
-        {tags.map((tag) => { 
-          return <Tag key={tag}>{tag}</Tag> })}
+      <TagsContainer>
+        {tags.map((tag) => {
+          return <Tag key={tag}>{tag}</Tag>;
+        })}
       </TagsContainer>
       <ButtonsContainer>
         <Link href={links.demo}>
@@ -73,6 +74,6 @@ const ProjectInfo = ({title, description, tags, links}) => {
       </ButtonsContainer>
     </InfoContainer>
   );
-}
+};
 
 export default ProjectInfo;

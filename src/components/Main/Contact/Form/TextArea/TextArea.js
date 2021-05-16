@@ -1,9 +1,9 @@
 import React from 'react';
-import { Field, ErrorMessage } from "formik";
+import {Field, ErrorMessage} from 'formik';
 import styled from 'styled-components';
 import color from '../../../../../styles/config/colors';
 import sizing from '../../../../../styles/config/sizing';
-import { StyledLabel, StyledError } from '../TextInput/TextInput';
+import {StyledLabel, StyledError} from '../TextInput/TextInput';
 
 const StyledTextarea = styled.textarea`
   padding: ${sizing.size3};
@@ -16,22 +16,28 @@ const StyledTextarea = styled.textarea`
   outline: none;
   font-size: 1rem;
   background-color: ${color.gray200};
+  border: none;
+
   color: ${color.black};
 
-  &:focus{
-  background-color: ${color.white};
+  &:focus {
+    background-color: ${color.white};
   }
 `;
 
-const TextArea = ({ type, name, placeholder, label }) => {
+const TextArea = ({type, name, placeholder, label}) => {
   return (
     <>
       <StyledLabel htmlFor={name}>{label}</StyledLabel>
-      <Field type={type} name={name} placeholder={placeholder} as={StyledTextarea} />
-      <ErrorMessage name="message" component={StyledError} />
+      <Field
+        type={type}
+        name={name}
+        placeholder={placeholder}
+        as={StyledTextarea}
+      />
+      <ErrorMessage name='message' component={StyledError} />
     </>
-  )
+  );
 };
 
 export default TextArea;
-

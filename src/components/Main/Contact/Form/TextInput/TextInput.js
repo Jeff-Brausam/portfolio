@@ -1,5 +1,5 @@
 import React from 'react';
-import { Field, ErrorMessage } from "formik";
+import {Field, ErrorMessage} from 'formik';
 import styled from 'styled-components';
 import sizing from '../../../../../styles/config/sizing';
 import color from '../../../../../styles/config/colors';
@@ -13,11 +13,12 @@ const StyledInput = styled.input`
   font-size: 1rem;
   font-family: inherit;
   color: ${color.black};
+  border: none;
   background-color: ${color.gray200};
-  
-  &:focus{
-  color: ${color.black};
-  background-color: ${color.white};
+
+  &:focus {
+    color: ${color.black};
+    background-color: ${color.white};
   }
 `;
 
@@ -32,15 +33,19 @@ export const StyledLabel = styled.label`
   color: ${color.gray800};
 `;
 
-const TextInput = ({ label, name, type, placeholder }) => {
+const TextInput = ({label, name, type, placeholder}) => {
   return (
     <>
       <StyledLabel htmlFor={name}>{label}</StyledLabel>
-      <Field type={type} name={name} placeholder={placeholder} as={StyledInput} />
-      <ErrorMessage name={name} component={StyledError}/>
+      <Field
+        type={type}
+        name={name}
+        placeholder={placeholder}
+        as={StyledInput}
+      />
+      <ErrorMessage name={name} component={StyledError} />
     </>
   );
-
-}
+};
 
 export default TextInput;

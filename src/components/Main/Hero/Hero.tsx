@@ -6,6 +6,27 @@ import grid from '../../../styles/config/grid';
 import breakpoint from '../../../styles/config/breakpoints';
 import HeroSVG from './HeroSVG';
 
+const Hero: React.FC = () => {
+  return (
+    <Wrapper>
+      <GridContainer>
+        <ContentContainer>
+          <InfoContainer>
+            <Title>Hi, im Jeff 👋</Title>
+            <SubTitle>I am a Fullstack Developer</SubTitle>
+            <StyledCatchPhrase>
+              I create scalable, optimized, performant web applications
+            </StyledCatchPhrase>
+          </InfoContainer>
+        </ContentContainer>
+        <ContentContainer>
+          <HeroSVG />
+        </ContentContainer>
+      </GridContainer>
+    </Wrapper>
+  );
+};
+
 const Wrapper = styled.section`
   background-color: ${color.gray900};
   height: 90vh;
@@ -14,10 +35,10 @@ const Wrapper = styled.section`
 `;
 
 const GridContainer = styled.div`
-  grid-column: 1 / 4; 
+  grid-column: 1 / 4;
   display: flex;
   flex-direction: column;
- 
+
   @media ${`(min-width: ${breakpoint.med})`} {
     grid-column: ${grid.gridColumnContainer};
     flex-direction: row;
@@ -31,17 +52,17 @@ const ContentContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  &:nth-of-type(2){
+  &:nth-of-type(2) {
     display: none;
     flex-basis: 0;
   }
 
   @media ${`(min-width: ${breakpoint.med})`} {
-  &:nth-of-type(2){
-    display: flex;
-    flex-basis: 50%;
+    &:nth-of-type(2) {
+      display: flex;
+      flex-basis: 50%;
+    }
   }
-} 
 `;
 
 const InfoContainer = styled.div`
@@ -52,35 +73,26 @@ const InfoContainer = styled.div`
 const Title = styled.h1`
   line-height: 1em;
   font-weight: 400;
-  text-shadow: 2px 2px 6px rgba(0,0,0,.2);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
   align-items: flex-end;
+  color: ${color.white};
+`;
+const SubTitle = styled.h3`
+  line-height: 1em;
+  font-weight: 400;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  align-items: flex-end;
+  margin-top: ${sizing.size6};
+
   color: ${color.white};
 `;
 
 const StyledCatchPhrase = styled.p`
-  text-shadow: 2px 2px 6px rgba(0,0,0,.2);
-  margin-top: ${sizing.size4};
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  margin-top: ${sizing.size6};
   font-weight: 300;
   color: ${color.white};
   align-items: flex-end;
 `;
-
-const Hero = () => {
-  return (
-    <Wrapper>
-      <GridContainer>
-        <ContentContainer>
-          <InfoContainer>
-            <Title>Frontend Developer</Title>
-            <StyledCatchPhrase>I create scalable, optimized, performant web applications</StyledCatchPhrase>
-          </InfoContainer>
-        </ContentContainer>
-        <ContentContainer>
-          <HeroSVG />
-        </ContentContainer>
-      </GridContainer>
-    </Wrapper>
-  )
-};
 
 export default Hero;

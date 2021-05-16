@@ -5,19 +5,19 @@ import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import color from '../../styles/config/colors';
 
-const Wrapper = styled.main`
-  flex-basis: 100vw;
-  background-color: ${color.white};
-`;
-
-const Main = () => {
+const Main: React.FC = () => {
   return (
     <Wrapper>
       <Hero />
       <Projects />
       <Contact />
     </Wrapper>
-  )
-}
+  );
+};
+
+const Wrapper = styled.main`
+  flex-basis: 100vw;
+  background-color: ${color.white};
+`;
 
 export default Main;

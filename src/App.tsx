@@ -4,18 +4,14 @@ import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
 
-function App() {
+const App: React.FC = () => {
   return (
-      <Layout>
-        {/* header */}
-        <Header />
-        {/* main */}
-        <Main />
-       
-        {/* footer */}
-        <Footer />
-      </Layout>
+    <Layout>
+      <Header />
+      <Main />
+      <Footer />
+    </Layout>
   );
-}
+};
 
 export default App;
