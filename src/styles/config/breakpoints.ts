@@ -1,4 +1,4 @@
-export default {
+const breakpoints = {
   // Small tablets and large smartphones (landscape view)
   small: '36rem',
   // Small tablets (portrait view)
@@ -8,3 +8,5 @@ export default {
   // Large tablets and desktops
   xl: '75rem',
 };
+
+export default breakpoints;

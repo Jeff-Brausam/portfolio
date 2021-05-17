@@ -23,13 +23,13 @@ const StyledHeader = styled.header`
   z-index: 1;
 `;
 
-const GridContainer = styled.div`
-  grid-column: ${grid.gridColumnContainer};
-  grid-row: 1 / 2;
+// const GridContainer = styled.div`
+//   grid-column: ${grid.gridColumnContainer};
+//   grid-row: 1 / 2;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-`;
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+// `;
 
 export default Header;

@@ -20,8 +20,8 @@ const Container = styled.div`
   height: 30.4rem;
   background-color: ${color.white};
   padding: ${sizing.size6};
-  box-shadow: 2px 3px 10px rgba(0,0,0,.1);
-  
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+
   display: flex;
   flex-direction: column;
   @media ${`(min-width: ${breakpoint.med})`} {
@@ -29,7 +29,7 @@ const Container = styled.div`
     flex-direction: row;
   }
 `;
-  
+
 const StyledWrapper = styled.div`
   flex: 1 1 50%;
   display: flex;
@@ -40,9 +40,8 @@ const StyledWrapper = styled.div`
 const PictureWrapper = styled(StyledWrapper)`
   order: -1;
   @media ${`(min-width: ${breakpoint.med})`} {
-
     /* Flips picture and info wrapper positions every odd render */
-    order: ${props => props.order % 2 == 0 ? '-1' : '1'};
+    order: ${(props) => (props.order % 2 === 0 ? '-1' : '1')};
   }
 `;
 
@@ -50,19 +49,24 @@ const InfoWrapper = styled(StyledWrapper)`
   order: 1;
 `;
 
-const Project = ({ title, description, tags, image, links, order }) => {
+const Project = ({title, description, tags, image, links, order}) => {
   return (
     <Wrapper>
       <Container>
         <InfoWrapper>
-          <ProjectInfo title={title} description={description} tags={tags} links={links}/>
+          <ProjectInfo
+            title={title}
+            description={description}
+            tags={tags}
+            links={links}
+          />
         </InfoWrapper>
         <PictureWrapper order={order}>
           <ProjectPhoto image={image} />
         </PictureWrapper>
       </Container>
     </Wrapper>
-  )
-}
+  );
+};
 
 export default Project;
