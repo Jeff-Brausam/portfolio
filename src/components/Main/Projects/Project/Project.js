@@ -8,7 +8,7 @@ import ProjectInfo from './ProjectInfo/ProjectInfo';
 import ProjectPhoto from './ProjectPhoto/ProjectPhoto';
 
 const Wrapper = styled.section`
-  flex-basis: 50vh;
+  flex-basis: 28vw;
   background-color: ${color.gray100};
 
   display: grid;
@@ -17,6 +17,7 @@ const Wrapper = styled.section`
 
 const Container = styled.div`
   grid-column: 1 / 4;
+  margin: 0 2rem;
   height: 30.4rem;
   background-color: ${color.white};
   padding: ${sizing.size6};

@@ -17,14 +17,20 @@ const Source = styled.source`
   width: 100%;
 `;
 
-const Picture = ({ url, alt }) => {
+const Picture = ({url, alt}) => {
   return (
     <StyledPicture>
-      <Source srcSet={url.large} media={`(min-width: ${breakpoint.screenXl})`} />
-      <Source srcSet={url.medium} media={`(min-width: ${breakpoint.screenMed})`} />
+      <Source
+        srcSet={url.large}
+        media={`(min-width: ${breakpoint.screenXl})`}
+      />
+      <Source
+        srcSet={url.medium}
+        media={`(min-width: ${breakpoint.screenMed})`}
+      />
       <Image srcSet={url.small} alt={alt} />
     </StyledPicture>
   );
-}
+};
 
 export default Picture;
